@@ -38,13 +38,14 @@ input[type=submit] { align-self: end; min-width: 10em; margin-right:30px; border
 .formblock > label {font-family: euphemia, ariel, sans-serif; font-style: normal; font-weight: 400;}
 
 .boxstyle {margin-right: 100px;}
-
+.boxwidth {width: 550px;}
 
 @media (max-width:900px) {
     .formblock { display:block; width:auto; flex-wrap: wrap; }
     .section {flex-direction: column;}
     #logo {display: none;}
     .boxstyle {margin-right: initial;}
+    .boxwidth{width: auto;}
 }
 
 #logo {

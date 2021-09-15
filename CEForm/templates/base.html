@@ -3,7 +3,7 @@
     <head>
         <title style="font-size:50px">{% block title %}{% endblock %} - Cyber Essentials</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--  <link rel="icon" type="image/png" href="/favicon16x16.png" sizes="16x16">
         <link rel="icon" type="image/png" href="/favicon32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="/favicon96x96.png" sizes="96x96">-->
@@ -22,7 +22,7 @@
                     <li><span style="background: #fbfbfb; border-radius: 3px; height: 14px; margin: 0px 5px ">{{ g.user['username'] }}</span>
                     <li><a style="background: #E03A5C; border-radius: 3px; height: 14px; width: 60px; color: white;" href="{{ url_for('auth.logout') }}">Log Out</a>
                 {% else %}
-                    <li><a style="background: #E03A5C; border-radius: 3px; height: 14px; width: 60px; color: white;" href="{{ url_for('auth.login') }}">Log In</a>
+                    <li><a style="background: #E03A5C; border-radius: 3px; height: 14px; width: 47px; color: white;" href="{{ url_for('auth.login') }}">Log In</a>
                 {% endif %}
             </ul>
         </nav>
