@@ -25,7 +25,12 @@ def index():
 
         else:
             print(request.form)
-            return "Success"
+            return redirect("secure.submitted")
+
+@login_required
+@bp.route('/submitted')
+def submitted():
+    return render_template("secure/submitted.html")
 
 
 
