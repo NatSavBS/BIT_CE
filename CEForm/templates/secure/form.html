@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}CE Signup{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <h2>Company Details</h2>
+  <form method="post">
+    <div class="section">
+      <div class="formblock">
+        <label for="CompanyName">Company name</label>
+        <input name="CompanyName" id="CompanyName" required>
+      </div>
+      <div class="formblock">
+        <label for="BusinessArea">Business Area</label>
+        <input name="BusinessArea" id="BusinessArea" required>
+      </div>
+    </div>
+    <hr>
+    <h2>Company Address</h2>
+    <div class="section">
+      <div class="formblock">
+        <label for="Line1">Line1</label>
+        <input name="Line1" id="Line1" required><br>
+
+        <label for="Line2">Line2</label>
+        <input name="Line2" id="Line2" required><br>
+
+        <label for="City">City</label>
+        <input name="City" id="City" required><br>
+      </div>
+      <div class="formblock">
+        <label for="Country">Country</label>
+        <input name="Country" id="Country" required><br>
+
+        <label for="Postcode">Postcode</label>
+        <input name="Postcode" id="Postcode" required>
+      </div>
+    </div>
+    <hr>
+    <h2>CE Contact Details</h2>
+    <div  class="section">
+      <div class="formblock">
+        <label for="ContactName">Contact Name</label>
+        <input name="ContactName" id="ContactName" required><br>
+
+        <label for="ContactEmail">Contact Work Email</label>
+        <input name="ContactEmail" id="ContactEmail" required>
+      </div>
+      <div class="formblock">
+        <label for="ContactPhone">Contact Mobile Number (2FA)</label>
+        <input name="ContactPhone" id="ContactPhone" required>
+      </div>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+{% endblock %}
