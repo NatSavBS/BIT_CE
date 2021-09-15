@@ -1,7 +1,14 @@
-html { font-family: sans-serif; background: #eee; padding: 1rem; }
-body { max-width: 960px; margin: 0 auto; background: white; }
-h1 { font-family: serif; color: #377ba8; margin: 1rem 0; }
-a { color: #377ba8; }
+@font-face {
+  font-family: euphemia;
+  src: url('euphemia_ucas.woff2');
+  }
+
+
+* {font-family: obvia, sans-serif; font-style: narrow-light; font-weight: 100;}
+html { background: #eee; padding: 1rem; }
+body { max-width: 1200px; margin: 0 auto; background: white; }
+h1 { color: #E03A5C; margin: 1rem 0; }
+a { color: #E03A5C; }
 hr { border: none; border-top: 1px solid lightgray; width:95%; height:1px;}
 nav { background: lightgray; display: flex; align-items: center; padding: 0 0.5rem; }
 nav h1 { flex: auto; margin: 0; }
@@ -27,8 +34,18 @@ input[type=submit] { align-self: end; min-width: 10em; margin-right:30px }
 
 .formblock {display:inline-block; width:50%; text-align:right; padding-right:30px}
 .section {display:flex;}
+.formblock > label {font-family: euphemia, ariel, sans-serif; font-style: normal; font-weight: 400;}
 
-@media (max-width:500px) {
+
+@media (max-width:900px) {
     .formblock { display:block; width:auto; flex-wrap: wrap; }
     .section {flex-direction: column;}
+    #logo {display: none;}
 }
+
+#logo {
+  height: auto;
+  width: 25%;
+  margin-right: 0px;
+  padding: 0px;
+  margin: -50px 0px -75px -40px;

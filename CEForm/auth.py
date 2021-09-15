@@ -51,6 +51,10 @@ def logout():
     session.clear()
     return redirect(url_for('index'))
 
+@bp.route('/submitted')
+def submitted():
+    return render_template("auth/submitted.html")
+
 def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
