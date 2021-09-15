@@ -16,7 +16,7 @@ def index():
     if request.method == "POST":
         error = ""
         #check all fields are valid
-        for X in ["CompanyName", "BusinessArea", "Line1", "Line2", "City", "Country", "Postcode", "ContactName", "ContactEmail", "ContactPhone"]:
+        for X in ["CompanyName", "BusinessArea", "Line1", "City", "Country", "Postcode", "ContactName", "ContactEmail", "ContactPhone"]:
             if request.form.get(X, '').strip() == '':
                 error += f"{X} cannot be blank"
         if error:
@@ -25,7 +25,7 @@ def index():
 
         else:
             print(request.form)
-            return redirect("secure.submitted")
+            return redirect("submitted")
 
 @login_required
 @bp.route('/submitted')
