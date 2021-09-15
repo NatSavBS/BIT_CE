@@ -1,0 +1,4 @@
+include CEForm/schema.sql
+graft CEForm/static
+graft CEForm/templates
+global-exclude *.pyc
