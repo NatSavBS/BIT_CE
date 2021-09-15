@@ -40,7 +40,6 @@ def init_db_command():
 @click.argument('pwd')
 @with_appcontext
 def add_user_command(name, pwd):
-    print(name, pwd)
     db = get_db()
     try:
         db.execute(
